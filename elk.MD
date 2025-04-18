@@ -270,6 +270,12 @@ systemctl start filebeat
 
 - We can check whether the connection is established or not using `tail -f /var/log/messages` file
 
+#### Elastic
+* go to elastic server for the first time we need set stack management
+* go to stack management. we can see data in index management
+* click on Index Patterns then create index paterns like (Filebeat or Metricbeat)
+* then go to discovery will get data
+
 #### Grok filter
 
 **nginx log**
