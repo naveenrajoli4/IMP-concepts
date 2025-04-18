@@ -260,7 +260,9 @@ vim /etc/filebeat/filebeat.yml
 
 - Set `enabled: true` under filebeat.inputs
 - Under paths: modify the log path to `/var/log/nginx/access.log`
-- Specify the elasticsearch IP address for the host variable under output.elasticsearch section
+- Specify the elasticsearch IP address for the host variable under output.elasticsearch section like (hosts: ["172.31.1.171:9200"])
+- OR
+- if we want to send data logstash hosts use this under logstesh section --> ["172.31.1.171:5044"]
 
 4. Start filebeat service
 
